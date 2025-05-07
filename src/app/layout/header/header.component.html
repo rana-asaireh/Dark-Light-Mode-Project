@@ -1,0 +1,17 @@
+<div class="all-header-tags">
+    <div class="welcome-message">
+        <app-logo></app-logo>
+        <p>{{welcomeMessage}}</p>
+        <app-user-name></app-user-name>
+    </div>
+    <div class="buttons">
+        <button (click)="toggleTheme()" class="theme-button">
+            <span class="material-icons">{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</span>
+        </button>
+        <button [class]="isDarkMode ? 'dark-mode-button' : 'light-mode-button'" (click)="logoutClick()">Logout</button>
+    </div>
+</div>
+
+
+
+       

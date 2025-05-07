@@ -1,0 +1,54 @@
+.all-side-bar-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; // Distribute items evenly in the sidebar
+  font-size: 24px;
+  height: 100%; // Ensure it takes the full sidebar height
+  
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%; // Make UL take full height
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; // Evenly space out list items
+  }
+
+  li {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      // margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  a {
+      display: block;
+      width: 100%; // Ensure full width
+      text-decoration: none;
+      padding: 15px 30px;
+      color: white;
+      font-family: sans-serif;
+      transition: background 0.3s ease;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+  }
+
+  a:hover {
+      background: rgba(255, 255, 255, 0.2);
+       // Full-width hover effect
+  }
+}
+
+.light-mode-sidebar {
+  background: #333;
+}
+
+.dark-mode-sidebar {
+  background-color: #111; /* Darkest for navbar */
+}

@@ -1,0 +1,51 @@
+.content1{
+    width: 50%;
+}
+.content1 h2 {
+    color: purple;
+    margin-bottom: 20px;
+}
+
+.content1 label {
+    color: #555;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content1 input, .content textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content1 textarea {
+    height: 150px;
+}
+
+.content1 button {
+    background-color: purple;
+    color: white;
+    width: 100%;
+    max-width: 500px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.content1 button:hover {
+    background-color: darken(purple, 10%);
+    transform: scale(1.05);
+}
+
+.content1 button:active {
+    transform: scale(0.95);
+}

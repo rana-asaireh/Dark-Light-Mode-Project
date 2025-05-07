@@ -1,0 +1,48 @@
+<div class="container" [class]="theme">
+  <div class="header " [class]="headerClass">
+    <app-header [class]="headerClass" (themeChange)="toggleTheme()"></app-header>
+  </div>
+
+  <div class="main">
+      <div class="sidebar " [class]="sidebarClass">
+         <app-side-bar  [class]="sidebarClass"></app-side-bar>
+        </div>
+        <div class="content " [class]="contentClass">
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Logo" class="logo">
+                <div class="logo-text">Ideal Innovation House</div>
+            </div>
+            
+            <div class="profile-container" >
+                <div class="profile-header">
+                    <div class="logo-name">
+                        <i class="fas fa-user"></i>
+                        <div class="name-info">
+                            <h2 class="name">Rana Asaira</h2>
+                            <p class="position">Front-End Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(962) 780-013-038</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>{{email}}</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Amman, Jordan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer " [class]="footerClass">
+        <app-footer [class]="footerClass"></app-footer>
+    </div>
+</div>
+

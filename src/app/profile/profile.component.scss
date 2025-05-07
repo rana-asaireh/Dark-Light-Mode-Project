@@ -1,0 +1,76 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    .logo {
+        height: 40px;
+        width: 50px;
+        margin-left: -8px;
+        mix-blend-mode: multiply;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: relative;
+        top: 1px; 
+    }
+}
+
+.profile-container {
+    width: 320px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Arial, sans-serif;
+
+    .profile-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .logo-name {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 40px;
+                color: #a21369;
+                margin-right: 15px;
+            }
+
+            .name-info {
+                text-align: left;
+
+                .name {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    margin: 0;
+                }
+
+                .position {
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+
+    .contact-info {
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1rem;
+
+            i {
+                font-size: 18px;
+                color: #a21369;;
+                margin-right: 10px;
+            }
+        }
+    }
+}

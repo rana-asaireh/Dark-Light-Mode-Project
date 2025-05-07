@@ -1,0 +1,81 @@
+.all-header-tags{
+    display: flex;
+    justify-content: space-between;
+}
+.welcome-message{
+    display: flex;
+    justify-content: space-between;
+    p{
+        margin-left: 5px;
+    }
+  
+}
+.buttons{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.b {
+  background-color: purple;
+  color: white;
+  padding: 5px 10px; 
+  border: none;
+  border-radius: 25px; 
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken(purple, 10%);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.light-mode-header, .light-mode-footer {
+    background: darkcyan;
+    color: rgb(91, 11, 38);
+}
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.2s;
+  
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  &:active {
+    transform: scale(0.9);
+  }
+  
+  .material-icons {
+    transition: color 0.3s, font-size 0.3s;
+  }
+}
+  
+.light-mode {
+  .theme-button .material-icons {
+    color: #fdd835; 
+    font-size: 32px; 
+  }
+}
+  
+
+.dark-mode {
+  .theme-button .material-icons {
+    color: #f5f5f5; 
+    font-size: 24px; 
+  }
+}

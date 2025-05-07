@@ -1,0 +1,16 @@
+<div class="login">
+    <div class="login-box">
+        <img src="logo.jpg" height="80px" width="90px" class="logo">
+        <h1>Login</h1>
+        
+        <label for="email">User Email:</label>
+        <input id="email" type="text" placeholder="Enter your email" (change)="userEmailChange($event)">
+        
+        <label for="password">Password:</label>
+        <input id="password" type="password" placeholder="Enter your password" (change)="passwordChange($event)">
+
+        <div class="button">
+            <button type="submit" (click)="loginValidation()">Login</button>
+        </div>
+    </div>
+</div>

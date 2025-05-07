@@ -1,0 +1,69 @@
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    .logo-div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  
+      img {
+        height: 50px;
+        width: 60px;
+        mix-blend-mode: multiply;
+      }
+  
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: purple;
+        position: relative;
+        top: 10px;
+      }
+    }
+  }
+  
+
+  .h1-div {
+    align-self: flex-start; 
+    margin-bottom: 10px;
+  
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  
+    p {
+      color:rgb(86, 7, 86);
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ff9900;
+      }
+    }
+  }

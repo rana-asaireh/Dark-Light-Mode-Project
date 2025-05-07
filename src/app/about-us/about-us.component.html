@@ -1,0 +1,40 @@
+<div class="container" [class]="theme">
+    <div class="header" [class]="headerClass">
+        <app-header [class]="headerClass" (themeChange)="toggleTheme()"></app-header>
+    </div>
+
+    <div class="main">
+        <div class="sidebar" [class]="sidebarClass">
+            <app-side-bar [class]="sidebarClass"></app-side-bar>
+        </div>
+        <div class="content" [class]="contentClass">
+            <div class="logo-container" >
+                <div class="logo-div">
+                    <img src="logo.jpg" height="40px" width="50px">
+                    <h2>Ideal Innovation House</h2>
+                </div>
+            </div>
+
+            <div class="h1-div">
+                <h1>Who We Are</h1>
+            </div>
+
+            <h2>Welcome to Ideal Innovation House (IIH)</h2>
+            <p>
+                We are a global leader in AI-powered technology transformation and innovation, with headquarters in Amman, Jordan, and a strategic hub in Seattle, USA. Our focus is on crafting AI-powered solutions that elevate small and medium-sized enterprises, ensuring that even those without dedicated AI resources can harness cutting-edge technology.
+            </p>
+            <p>
+                Utilizing advanced Natural Language Processing (NLP), machine learning, and predictive analytics technologies, our solutions are designed to deliver personalized, scalable, and data-driven results, ensuring optimal efficiency across multiple business functions. Driven by a leadership team with extensive experience in AI, IoT, and technology transformation strategies, our mission is to empower and enrich lives through innovative, secure, scalable technology, providing dedicated AI Engineers, Data Scientists, and Developers who are aligned with your specific project and business needs.
+            </p>
+
+            <div class="contact-info">
+                <p>Email: {{email}}</p>
+                <p>Tel: +962 785542654</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" [class]="footerClass">
+        <app-footer [class]="footerClass"></app-footer>
+    </div>
+</div>

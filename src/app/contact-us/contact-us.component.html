@@ -1,0 +1,32 @@
+<div class="container" [class]="theme">
+    <div class="header " [class]="headerClass">
+        <app-header [class]="headerClass" (themeChange)="toggleTheme()"></app-header>
+    </div>
+    <div class="main">
+        <div class="sidebar " [class]="sidebarClass">
+            <app-side-bar  [class]="sidebarClass"></app-side-bar>
+        </div>
+        <div class="content " [class]="contentClass">
+            <div class="content1">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" (change)="nameChange($event)">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" (change)="emailChange($event)">
+                <br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" (change)="subjectChange($event)">
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" (change)="messageChange($event)"></textarea>
+                <br>
+                <button (click)="contactButton()">Send Message</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer " [class]="footerClass">
+        <app-footer [class]="footerClass"></app-footer>
+    </div>
+</div>
+

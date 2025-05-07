@@ -1,0 +1,52 @@
+
+<div class="container" [class]="theme">
+
+    <div class="header " [class]="headerClass">
+        <app-header [class]="headerClass" (themeChange)="toggleTheme()"></app-header>
+    </div>
+ 
+    <div class="main">
+        <div class="sidebar " [class]="sidebarClass">
+            <app-side-bar  [class]="sidebarClass"></app-side-bar>
+        </div>
+        <div class="content " [class]="contentClass">
+          <div class="form-container">
+             <h2>Add New User</h2>
+                 <div class="input-group">
+                     <label for="firstName">First Name:</label>
+                     <input id="firstName" type="text" (change)="firstNameChange($event)" required>
+                 </div>
+ 
+                 <div class="input-group">
+                     <label for="lastName">Last Name:</label>
+                     <input id="lastName" type="text" (change)="lastNameChange($event)" required>
+                 </div>
+ 
+                 <div class="input-group">
+                     <label for="email">Email Address:</label>
+                     <input id="email" type="email" (change)="emailChange($event)" required>
+                 </div>
+ 
+                 <div class="input-group">
+                     <label for="password">Password:</label>
+                     <input id="password" type="password" (change)="passwordChange($event)" required>
+                 </div>
+ 
+                 <div class="input-group">
+                     <label for="confirmPassword">Confirm Password:</label>
+                     <input id="confirmPassword" type="password" (change)="confirmPasswordChange($event)" required>
+                 </div>
+ 
+                 <div class="button-container">
+                     <button (click)="addUserButton()">Add User</button>
+                 </div>
+          </div>
+          
+        </div>
+    </div>
+ 
+    <div class="footer " [class]="footerClass">
+        <app-footer [class]="footerClass"></app-footer>
+    </div>
+ </div>
+ 

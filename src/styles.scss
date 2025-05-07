@@ -1,0 +1,252 @@
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-top: 8px;
+  font-size: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+ 
+}
+.footer {
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); 
+}
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  flex: 1;
+  flex: 1;
+  
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+
+  
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode-header, .light-mode-footer {
+  background: white;
+  color: rgb(91, 11, 38);
+}
+
+.light-mode-sidebar {
+  background: rgb(25, 70, 113);
+}
+
+.dark-mode {
+  background-color: rgb(33, 29, 29);
+  color: white;
+}
+
+.dark-mode-header, .dark-mode-footer {
+  background-color: #333;
+}
+
+.dark-mode-sidebar {
+  background-color: #111;
+}
+
+.all-header-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-message {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-left: 5px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b {
+  background-color: purple;
+  color: white;
+  padding: 5px 10px; 
+  border: none;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: darken(purple, 10%);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  .material-icons {
+    transition: color 0.3s, font-size 0.3s;
+  }
+}
+
+.light-mode {
+  .theme-button .material-icons {
+    color: black; 
+    font-size: 24px; 
+  }
+}
+
+.dark-mode {
+  .theme-button .material-icons {
+    color: yellow; 
+    font-size: 24px; 
+  }
+}
+.all-footer-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developer-name {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.all-side-bar-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+
+  a {
+    text-decoration: none;
+    margin: 10px; 
+    color: white;
+    font-family: sans-serif;
+    padding: 10px 5px; 
+    transition: all 0.3s ease;
+    border-radius: 5px; 
+
+    &:hover {
+      border: 2px solid rgba(18, 18, 16, 0.1);
+      background-color: rgba(3, 3, 3, 0.1) !important; 
+    }
+  }
+}
+
+
+
+.dark-mode-button {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.light-mode-button {
+  background-color: purple;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dark-mode-button:hover, .light-mode-button:hover {
+  transform: scale(1.05);
+}
+
+.dark-mode-button:active, .light-mode-button:active {
+  transform: scale(0.95);
+}
+.dark-mode input {
+  background-color: #878484;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode input::placeholder {
+  color: #666;
+}
+.dark-mode h2 {
+ 
+  color: white;
+
+}
+.dark-mode textarea {
+  background-color: #878484;
+  color: white;
+  border: 1px solid #555;
+}

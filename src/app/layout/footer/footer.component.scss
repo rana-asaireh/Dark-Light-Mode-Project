@@ -1,0 +1,27 @@
+.footer {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.all-footer-tags{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.developer-name{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+.light-mode-header, .light-mode-footer {
+    background: darkcyan;
+    color: rgb(91, 11, 38);
+  }
+
+
+  .dark-mode-header, .dark-mode-footer {
+    background-color: #333; 
+  }
